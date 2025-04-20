@@ -89,8 +89,6 @@ import { rangeFogFactor } from "three/tsl";
 
 import React from 'react'
 import {HeroSectionOne} from './Components/HeroSection'
-
-
 import { Routes, Route } from "react-router-dom";
 import {SignupFormDemo} from './Components/Signup';
 import { LoginFormDemo } from "./Components/Login";
@@ -106,10 +104,10 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout/>}>
       <Route path="/" element={<HeroSectionOne/>}/>
-       {/* <Route path='' element={<Sidebar/>}/> */}
+       {/* <Route path='/sidebar' element={<Sidebar/>}/> */}
+       </Route>
       <Route path="/signup" element={<SignupFormDemo/>}/>
       <Route path="/login" element={<LoginFormDemo/>}/>
-      </Route>
     </Routes>
     
   )
